@@ -1,0 +1,9 @@
+SELECT * FROM emp WHERE (job = 'MANAGER' AND deptno=10) OR (job = 'CLERK' AND deptno = 20);
+
+
+Output : 
+
+empno	ename	job	mgr	hiredate	sal	comm	deptno
+7369	SMITH	CLERK	7902	1980-12-17	800.00	NULL	20
+7782	CLARK	MANAGER	7839	1981-06-09	2450.00	NULL	10
+7876	ADAMS	CLERK	7788	1983-01-12	1100.00	NULL	20
