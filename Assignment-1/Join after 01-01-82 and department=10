@@ -1,0 +1,8 @@
+SELECT * FROM  emp WHERE hiredate > '1982-01-01' AND deptno=10 ;
+
+
+Output : 
+
+
+empno	ename	job	mgr	hiredate	sal	comm	deptno
+7934	MILLER	CLERK	7782	1982-01-23	1300.00	NULL	10
