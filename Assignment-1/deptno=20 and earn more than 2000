@@ -1,0 +1,10 @@
+SELECT ename,job,sal FROM emp WHERE deptno=20 AND sal>2000;
+
+
+Output : 
+
+
+ename	job	sal
+JONES	MANAGER	2975.00
+SCOTT	ANALYST	3000.00
+FORD	ANALYST	3000.00
