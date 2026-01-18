@@ -1,0 +1,8 @@
+SELECT * FROM emp WHERE comm > 0.6 * sal;
+
+
+Output : 
+
+
+empno	ename	job	mgr	hiredate	sal	comm	deptno
+7654	MARTIN	SALESMAN	7698	1981-09-28	1250.00	1400.00	30
