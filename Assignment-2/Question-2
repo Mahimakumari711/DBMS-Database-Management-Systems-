@@ -1,0 +1,7 @@
+SELECT * FROM emp WHERE empno=7788;
+
+
+Output : 
+
+empno	ename	job	mgr	hiredate	sal	comm	deptno
+7788	SCOTT	ANALYST	7566	1982-12-09	3000.00	NULL	20
