@@ -1,0 +1,8 @@
+SELECT * FROM emp WHERE ename LIKE 'S%' ;
+
+
+Output : 
+
+empno	ename	job	mgr	hiredate	sal	comm	deptno
+7369	SMITH	CLERK	7902	1980-12-17	800.00	NULL	20
+7788	SCOTT	ANALYST	7566	1982-12-09	3000.00	NULL	20
