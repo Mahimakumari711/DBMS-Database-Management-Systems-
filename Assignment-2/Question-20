@@ -1,0 +1,9 @@
+SELECT CONCAT(ename,'_',job) AS Name_job FROM emp WHERE job LIKE '%ERK' ;
+
+
+Output :
+name_job
+SMITH_CLERK
+ADAMS_CLERK
+JAMES_CLERK
+MILLER_CLERK
