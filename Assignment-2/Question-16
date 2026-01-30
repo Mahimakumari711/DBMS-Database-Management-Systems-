@@ -1,0 +1,6 @@
+SELECT * FROM emp WHERE sal>3000 AND  job='PRESIDENT';
+
+
+Output :
+empno	ename	job	mgr	hiredate	sal	comm	deptno
+7839	KING	PRESIDENT	NULL	1981-11-17	5000.00	NULL	10
