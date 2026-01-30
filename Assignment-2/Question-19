@@ -1,0 +1,9 @@
+SELECT * FROM emp WHERE ename LIKE '__RD';
+
+SELECT * FROM emp WHERE ename LIKE '%RD';
+
+
+Output :
+empno	ename	job	mgr	hiredate	sal	comm	deptno
+7521	WARD	SALESMAN	7698	1981-02-22	1250.00	500.00	30
+7902	FORD	ANALYST	7566	1981-12-03	3000.00	NULL	20
