@@ -1,0 +1,7 @@
+SELECT * FROM emp WHERE sal<2000 AND deptno=20;
+
+
+Output :
+empno	ename	job	mgr	hiredate	sal	comm	deptno
+7369	SMITH	CLERK	7902	1980-12-17	800.00	NULL	20
+7876	ADAMS	CLERK	7788	1983-01-12	1100.00	NULL	20
