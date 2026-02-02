@@ -1,0 +1,20 @@
+SELECT ename || ' joined on the ' || INITCAP(TO_CHAR(hiredate, 'DDSPTH')) || ' of ' || INITCAP(TO_CHAR(hiredate, 'Month')) || ' of the year ' || TO_CHAR(hiredate, 'YYYY') AS details FROM emp ;
+
+
+Output :
+
+details
+SMITH joined on the 17th of December  of the year 1980
+ALLEN joined on the 20th of February  of the year 1981
+WARD joined on the 22th of February  of the year 1981
+JONES joined on the 02th of April     of the year 1981
+MARTIN joined on the 28th of September of the year 1981
+BLAKE joined on the 01th of May       of the year 1981
+CLARK joined on the 09th of June      of the year 1981
+SCOTT joined on the 09th of December  of the year 1982
+KING joined on the 17th of November  of the year 1981
+TURNER joined on the 08th of September of the year 1981
+ADAMS joined on the 12th of January   of the year 1983
+JAMES joined on the 03th of December  of the year 1981
+FORD joined on the 03th of December  of the year 1981
+MILLER joined on the 23th of January   of the year 1982
