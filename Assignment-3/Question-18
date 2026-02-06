@@ -1,0 +1,10 @@
+SELECT ename FROM emp WHERE ename LIKE 'J%' OR ename LIKE 'K%' OR ename LIKE 'L%' OR ename LIKE 'M%';
+
+
+Output :
+ename
+JONES
+MARTIN
+KING
+JAMES
+MILLER
