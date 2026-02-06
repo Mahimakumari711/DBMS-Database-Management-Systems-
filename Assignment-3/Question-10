@@ -1,0 +1,19 @@
+SELECT RPAD(ename, 16) AS padded_name FROM emp ; 
+
+
+Output :
+padded_name
+SMITH           
+ALLEN           
+WARD            
+JONES           
+MARTIN          
+BLAKE           
+CLARK           
+SCOTT           
+KING            
+TURNER          
+ADAMS           
+JAMES           
+FORD            
+MILLER          
