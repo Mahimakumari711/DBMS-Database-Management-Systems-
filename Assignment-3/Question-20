@@ -1,0 +1,6 @@
+SELECT ename, job FROM emp WHERE mgr IS NULL ;
+
+
+Output :
+ename	job
+KING	PRESIDENT
