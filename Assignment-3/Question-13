@@ -1,0 +1,8 @@
+SELECT ename, job FROM emp WHERE RIGHT(ename, 1) = RIGHT(job, 1) ; 
+
+
+Output :
+ename	job
+ALLEN	SALESMAN
+MARTIN	SALESMAN
+SCOTT	ANALYST
