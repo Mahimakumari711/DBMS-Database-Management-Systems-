@@ -1,0 +1,19 @@
+SELECT LEFT(ename, 3) AS first_three FROM emp ;
+
+
+Output :
+first_three
+SMI
+ALL
+WAR
+JON
+MAR
+BLA
+CLA
+SCO
+KIN
+TUR
+ADA
+JAM
+FOR
+MIL
