@@ -1,0 +1,19 @@
+SELECT ename, LENGTH(ename) AS name_length FROM emp ;
+
+
+Output :
+ename	name_length
+SMITH	5
+ALLEN	5
+WARD	4
+JONES	5
+MARTIN	6
+BLAKE	5
+CLARK	5
+SCOTT	5
+KING	4
+TURNER	6
+ADAMS	5
+JAMES	5
+FORD	4
+MILLER	6
