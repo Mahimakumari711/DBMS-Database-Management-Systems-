@@ -1,0 +1,6 @@
+SELECT ename, comm FROM emp WHERE comm = 0 ;
+
+
+Output :
+ename	comm
+TURNER	0.00
