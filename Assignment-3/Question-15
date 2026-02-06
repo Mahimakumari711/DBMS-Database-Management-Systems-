@@ -1,0 +1,12 @@
+SELECT ename FROM emp WHERE ename LIKE '%A%' ;
+
+
+Output :
+ename
+ALLEN
+WARD
+MARTIN
+BLAKE
+CLARK
+ADAMS
+JAMES
