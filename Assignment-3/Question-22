@@ -1,0 +1,15 @@
+SELECT ename, deptno FROM emp WHERE deptno IN (10, 30) ORDER BY ename ; 
+
+
+Output :
+
+ename	deptno
+ALLEN	30
+BLAKE	30
+CLARK	10
+JAMES	30
+KING	10
+MARTIN	30
+MILLER	10
+TURNER	30
+WARD	30
