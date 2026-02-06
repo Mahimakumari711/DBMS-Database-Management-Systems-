@@ -1,0 +1,19 @@
+SELECT empno, INITCAP(ename) AS name, deptno FROM emp ORDER BY deptno DESC;
+
+
+Output :
+empno	name	deptno
+7900	James	30
+7521	Ward	30
+7844	Turner	30
+7499	Allen	30
+7654	Martin	30
+7698	Blake	30
+7369	Smith	20
+7566	Jones	20
+7788	Scott	20
+7876	Adams	20
+7902	Ford	20
+7782	Clark	10
+7839	King	10
+7934	Miller	10
