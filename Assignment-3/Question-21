@@ -1,0 +1,7 @@
+SELECT ename FROM emp WHERE LENGTH(ename) = 5 AND ename LIKE '%N' ;
+
+
+Output :
+
+ename
+ALLEN
