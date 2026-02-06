@@ -1,0 +1,23 @@
+SELECT ename, CASE 
+WHEN comm IS NOT NULL AND comm > 0 
+THEN 'YES'
+ELSE 'NO'
+END AS receives_commission FROM emp ;
+
+
+Output :
+ename	receives_commission
+SMITH	NO
+ALLEN	YES
+WARD	YES
+JONES	NO
+MARTIN	YES
+BLAKE	NO
+CLARK	NO
+SCOTT	NO
+KING	NO
+TURNER	NO
+ADAMS	NO
+JAMES	NO
+FORD	NO
+MILLER	NO
