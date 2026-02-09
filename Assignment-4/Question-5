@@ -1,0 +1,6 @@
+SELECT COUNT(job) FROM emp WHERE job='CLERK' AND hiredate > '1981-01-01' ;
+
+
+Output :
+count
+3
