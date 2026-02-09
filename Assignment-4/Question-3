@@ -1,0 +1,6 @@
+SELECT COUNT(job) FROM emp WHERE job='CLERK' ;
+
+
+Output :
+count
+4
