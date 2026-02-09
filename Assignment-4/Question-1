@@ -1,0 +1,6 @@
+SELECT REPLACE('MALAYALAM','A','E');
+
+
+Output :
+replace
+MELEYELEM
