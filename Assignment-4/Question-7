@@ -1,0 +1,19 @@
+SELECT (12* (sal + COALESCE (comm, 0))) AS yearly_compensation FROM emp ;
+
+
+Output :
+yearly_compensation
+9600.00
+22800.00
+21000.00
+35700.00
+31800.00
+34200.00
+29400.00
+36000.00
+60000.00
+18000.00
+13200.00
+11400.00
+36000.00
+15600.00
