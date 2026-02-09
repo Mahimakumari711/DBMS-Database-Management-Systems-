@@ -1,0 +1,6 @@
+SELECT SUM(sal) AS t_sal , SUM(comm) AS t_comm FROM emp ;
+
+
+Output :
+t_sal	t_comm
+29025.00	2200.00
