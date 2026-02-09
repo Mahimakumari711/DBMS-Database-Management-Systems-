@@ -1,0 +1,6 @@
+SELECT AVG(sal) FROM emp WHERE job='SALESMAN' ;
+
+
+Output :
+avg
+1400.0000000000000000
