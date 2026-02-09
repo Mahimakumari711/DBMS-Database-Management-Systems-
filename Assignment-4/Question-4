@@ -1,0 +1,8 @@
+SELECT COUNT(*) FROM emp GROUP BY  deptno ;
+
+
+Output : 
+count
+6
+3
+5
