@@ -1,0 +1,9 @@
+SELECT deptno, MIN(sal), MAX(sal) FROM emp WHERE job='MANAGER' GROUP BY deptno ;
+
+
+Output :
+
+deptno	min	max
+10	2450.00	2450.00
+20	2975.00	2975.00
+30	2850.00	2850.00
