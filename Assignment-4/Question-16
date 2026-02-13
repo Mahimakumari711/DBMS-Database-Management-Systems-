@@ -1,0 +1,8 @@
+SELECT deptno, MIN(sal) FROM emp WHERE job='MANAGER' GROUP BY deptno HAVING MIN(sal)>2500 ;
+
+
+Output :'
+
+deptno	min
+20	2975.00
+30	2850.00
