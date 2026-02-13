@@ -1,0 +1,10 @@
+SELECT ename , deptno, sal FROM emp WHERE sal IN (SELECT MAX(sal) FROM emp GROUP BY deptno ) ;
+
+
+Output :
+
+ename	deptno	sal
+BLAKE	30	2850.00
+SCOTT	20	3000.00
+KING	10	5000.00
+FORD	20	3000.0
