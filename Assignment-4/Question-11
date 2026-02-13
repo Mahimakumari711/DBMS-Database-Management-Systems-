@@ -1,0 +1,7 @@
+SELECT MIN(ename) FROM emp ;
+
+
+Output :
+
+min
+ADAMS
