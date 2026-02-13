@@ -1,0 +1,6 @@
+SELECT ename , sal FROM emp WHERE sal IN (SELECT MAX(sal) FROM emp) ;
+
+
+Output :
+ename	sal
+KING	5000.00
