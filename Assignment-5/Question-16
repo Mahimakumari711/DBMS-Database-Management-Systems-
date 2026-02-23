@@ -1,0 +1,7 @@
+SELECT deptno, COUNT(*) FROM emp GROUP BY deptno HAVING COUNT(*) > 5; 
+
+
+Output :
+
+deptno	count
+30	6
