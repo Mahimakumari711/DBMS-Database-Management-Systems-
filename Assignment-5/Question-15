@@ -1,0 +1,7 @@
+SELECT MAX(sal) AS Second_max, job FROM emp GROUP BY job ORDER BY AVG(sal) DESC LIMIT 1 OFFSET 1;
+
+
+Output :
+
+second_max	job
+3000.00	ANALYST
