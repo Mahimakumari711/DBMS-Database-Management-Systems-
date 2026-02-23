@@ -1,0 +1,10 @@
+SELECT sal, job,deptno  FROM emp GROUP BY deptno, job,sal  HAVING sal > (SELECT AVG(sal) FROM emp ) ;
+
+
+Output :
+sal	job	deptno
+3000.00	ANALYST	20
+2850.00	MANAGER	30
+2975.00	MANAGER	20
+2450.00	MANAGER	10
+5000.00	PRESIDENT	10
