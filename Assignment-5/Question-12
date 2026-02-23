@@ -1,0 +1,20 @@
+SELECT AGE(CURRENT_DATE, hiredate) FROM emp ;
+
+
+Output :
+
+age
+45 years 2 mons 6 days
+45 years 3 days
+45 years 1 day
+44 years 10 mons 21 days
+44 years 4 mons 25 days
+44 years 9 mons 22 days
+44 years 8 mons 14 days
+43 years 2 mons 14 days
+44 years 3 mons 6 days
+44 years 5 mons 15 days
+43 years 1 mon 11 days
+44 years 2 mons 20 days
+44 years 2 mons 20 days
+44 years 1 mon
