@@ -1,0 +1,7 @@
+SELECT COUNT(*) FROM emp WHERE comm IS NULL ;
+
+
+Output : 
+
+count
+10
