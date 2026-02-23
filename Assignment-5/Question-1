@@ -1,0 +1,10 @@
+SELECT ename, job, sal, deptno FROM emp  WHERE deptno= ( SELECT deptno FROM emp WHERE ename='SMITH');
+
+
+Output :
+ename	job	sal	deptno
+SMITH	CLERK	800.00	20
+JONES	MANAGER	2975.00	20
+SCOTT	ANALYST	3000.00	20
+ADAMS	CLERK	1100.00	20
+FORD	ANALYST	3000.00	20
