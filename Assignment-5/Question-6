@@ -1,0 +1,7 @@
+SELECT * FROM emp WHERE sal = (SELECT MIN(sal) FROM emp) ;
+
+
+Output :
+
+empno	ename	job	mgr	hiredate	sal	comm	deptno
+7369	SMITH	CLERK	7902	1980-12-17	800.00	NULL	20 
