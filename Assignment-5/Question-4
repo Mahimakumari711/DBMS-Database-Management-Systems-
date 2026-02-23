@@ -1,0 +1,9 @@
+SELECT ename, job, sal*12 AS Annual_Sal, deptno FROM emp WHERE sal > (SELECT sal FROM emp WHERE ename ='JONES') ; 
+
+
+Outpur :
+
+ename	job	annual_sal	deptno
+SCOTT	ANALYST	36000.00	20
+KING	PRESIDENT	60000.00	10
+FORD	ANALYST	36000.00	20
