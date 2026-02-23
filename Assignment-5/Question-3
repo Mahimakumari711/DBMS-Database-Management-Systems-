@@ -1,0 +1,12 @@
+SELECT deptno, empno, ename FROM emp WHERE deptno = (SELECT deptno FROM dept WHERE dname='SALES') ;
+
+
+Output :
+
+deptno	empno	ename
+30	7499	ALLEN
+30	7521	WARD
+30	7654	MARTIN
+30	7698	BLAKE
+30	7844	TURNER
+30	7900	JAMES
