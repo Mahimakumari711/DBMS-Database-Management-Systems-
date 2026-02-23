@@ -1,0 +1,7 @@
+SELECT AVG(sal), job FROM emp GROUP BY job ORDER BY AVG(sal) DESC LIMIT 1 ;
+
+
+Output :
+
+avg	job
+5000.0000000000000000	PRESIDENT
