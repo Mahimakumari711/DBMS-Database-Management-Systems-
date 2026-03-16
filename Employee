@@ -1,0 +1,32 @@
+ALTER TABLE EMPLOYEES ALTER COLUMN LAST_NAME TYPE VARCHAR(2) ;
+
+ALTER TABLE EMPLOYEES ALTER COLUMN EMPLOYEE_ID TYPE NUMERIC(10) ;
+
+ALTER TABLE EMPLOYEES ALTER COLUMN LAST_NAME TYPE VARCHAR(20) ;
+
+ALTER TABLE EMPLOYEES ALTER COLUMN PHONE_NUMBER TYPE VARCHAR(18) ;
+
+ALTER TABLE EMPLOYEES ADD COLUMN ANNSAL INT ;
+
+SELECT COLUMN_NAME,DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'employees';
+
+output :
+
+column_name	data_type
+phone_number	character varying
+department_id	integer
+annsal	integer
+manager_id	integer
+first_name	character varying
+email	character varying
+employee_id	numeric
+last_name	character varying
+commission_pct	numeric
+job_id	character varying
+salary	numeric
+hire_date	date
+
+ALTER TABLE EMPLOYEES ALTER COLUMN LAST_NAME TYPE VARCHAR(24) ;
+
+ALTER TABLE EMPLOYEES DROP ANNSAL;
+
