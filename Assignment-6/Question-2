@@ -1,0 +1,88 @@
+SELECT COLUMN_NAME,DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'regions';
+
+Output :
+
+column_name	data_type
+region_id	integer
+region_name	character varying
+
+
+
+SELECT COLUMN_NAME,DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'countries';
+
+Output :
+
+column_name	data_type
+country_id	character varying
+country_name	character varying
+region_id	integer
+
+
+
+SELECT COLUMN_NAME,DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'locations';
+
+Output :
+
+column_name	data_type
+location_id	integer
+street_address	character varying
+postal_code	character varying
+city	character varying
+state_province	character varying
+country_id	character varying
+
+
+
+SELECT COLUMN_NAME,DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'departments';
+
+Output :
+
+column_name	data_type
+department_id	integer
+department_name	character varying
+manager_id	character varying
+location_id	integer
+
+
+
+SELECT COLUMN_NAME,DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'jobs';
+
+Output :
+
+column_name	data_type
+job_id	character varying
+job_title	character varying
+min_salary	numeric
+max_salary	numeric
+
+
+
+SELECT COLUMN_NAME,DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'job_history';
+
+Output :
+
+column_name	data_type
+employee_id	integer
+start_date	date
+end_date	date
+job_id	character varying
+department_id	integer
+
+
+
+SELECT COLUMN_NAME,DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'employees';
+
+Output :
+
+column_name	data_type
+employee_id	numeric
+first_name	character varying
+last_name	character varying
+email	character varying
+phone_number	character varying
+hire_date	date
+job_id	character varying
+salary	numeric
+commission_pct	numeric
+manager_id	integer
+department_id	integer
