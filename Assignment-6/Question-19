@@ -1,0 +1,9 @@
+SELECT COLUMN_NAME,DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'departments';
+
+Output:
+
+column_name	data_type
+department_id	integer
+department_name	character varying
+manager_id	character varying
+location_id	integer
