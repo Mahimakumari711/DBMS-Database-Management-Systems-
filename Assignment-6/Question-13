@@ -1,0 +1,16 @@
+SELECT COLUMN_NAME,DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'employees';
+
+Output :
+column_name	data_type
+phone_number	character varying
+department_id	integer
+annsal	integer
+manager_id	integer
+first_name	character varying
+email	character varying
+employee_id	numeric
+last_name	character varying
+commission_pct	numeric
+job_id	character varying
+salary	numeric
+hire_date	date
