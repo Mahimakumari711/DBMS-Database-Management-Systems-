@@ -1,0 +1,8 @@
+SELECT e.* FROM employee e,department d WHERE e.dno=d.dnumber AND dname='ACADEMIC';
+
+Output :
+
+ename	esrno	bdate	address	sex	salary	mgrsrno	dno
+AJIT BEHERA	315152	1971-07-09	10 KALINGA	M	32802.00	133100	3
+MEENAKSHI	334548	1979-04-25	73 BRIKLY	F	25125.00	315152	3
+NIHAR NAYAK	334524	1966-12-17	73 DALLAS	M	29105.00	315152	3
