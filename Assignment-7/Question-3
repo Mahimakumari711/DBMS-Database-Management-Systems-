@@ -1,0 +1,9 @@
+SELECT d.dname,d.dnumber,dl.dlocation FROM department d,dept_locations dl WHERE d.dnumber=dl.dnumber ;
+
+Output :
+
+dname	dnumber	dlocation
+PROJECT	2	SINGAPORE
+ADMIN	1	INDIA
+RESEARCH	4	QUUENSLAND
+ACADEMIC	3	LONDON
