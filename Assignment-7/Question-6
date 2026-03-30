@@ -1,0 +1,6 @@
+SELECT e.* FROM employee e,department d WHERE d.mgrstartd>= '1999-JUL-17' AND e.esrno=d.mgrsrno;
+
+Output :
+
+ename	esrno	bdate	address	sex	salary	mgrsrno	dno
+UMASHANKAR	216852	1967-07-17	26 FINE OAK	M	32770.00	133100	2
