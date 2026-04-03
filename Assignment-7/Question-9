@@ -1,0 +1,6 @@
+SELECT p.plocation FROM department d INNER JOIN project p ON d.dnumber = p.dnum INNER JOIN employee e ON e.dno = d.dnumber WHERE e.ename='SATYA';
+
+Output :
+
+plocation
+KOREA
