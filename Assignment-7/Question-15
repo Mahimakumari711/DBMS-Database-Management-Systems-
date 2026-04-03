@@ -1,0 +1,8 @@
+SELECT e.*, p.plocation FROM employee e INNER JOIN department d ON e.dno = d.dnumber INNER JOIN project p ON d.dnumber = p.dnum WHERE p.plocation = 'INDIA';
+
+Output :
+
+ename	esrno	bdate	address	sex	salary	mgrsrno	dno	plocation
+UMASHANKAR	216852	1967-07-17	26 FINE OAK	M	32770.00	133100	2	INDIA
+BHAGWAT	215152	1971-03-23	55 FLORIDA	M	32802.00	216852	2	INDIA
+DEBASMITA	295485	1970-04-16	1 QUEENS LAND	F	20500.00	216852	2	INDIA
