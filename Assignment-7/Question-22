@@ -1,12 +1,50 @@
-SELECT 
-    e.ename, e.esrno, e.bdate, e.address, e.s, e.salary, e.mgrsrno, e.dno,
-    d.dname, d.mgrsrno as dept_mgr, d.mgrstartd,
-    p.pname, p.pnumber, p.plocation,
-    w.pno, w.hours,
-    dl.dlocation
-FROM employee e
-LEFT JOIN department d ON e.dno = d.dnumber
-LEFT JOIN project p ON d.dnumber = p.dnum
-LEFT JOIN work_on w ON e.esrno = w.esrno  -- Fixed: work_on not works_on
-LEFT JOIN dept_locations dl ON d.dnumber = dl.dnumber
-WHERE e.ename = 'MEENAKSHI';
+Method 1 :
+
+SELECT DISTINCT 
+e.ename, e.esrno, e.bdate, e.address, e.sex, e.salary, e.mgrsrno, e.dno,
+d.dname, d.mgrsrno, d.mgrstartd,
+p.pname, p.pnumber, p.plocation,
+w.pno, w.hours,dl.dlocation FROM employee e 
+LEFT JOIN department d ON e.dno = d.dnumber 
+LEFT JOIN project p ON d.dnumber = p.dnum 
+LEFT JOIN work_on w ON e.esrno = w.esrno 
+LEFT JOIN dept_locations dl ON d.dnumber = dl.dnumber WHERE e.ename = 'MEENAKSHI';
+
+Output :
+
+ename	esrno	bdate	address	sex	salary	mgrsrno	dno	dname	mgrsrno	mgrstartd	pname	pnumber	plocation	pno	hours	dlocation
+MEENAKSHI	334548	1979-04-25	73 BRIKLY	F	25125.00	315152	3	ACADEMIC	315152	1989-12-20	BIO INFORMATICS	19	SOUTH AFRICA	19	2.50	LONDON
+MEENAKSHI	334548	1979-04-25	73 BRIKLY	F	25125.00	315152	3	ACADEMIC	315152	1989-12-20	BIO INFORMATICS	19	SOUTH AFRICA	19	2.54	LONDON
+MEENAKSHI	334548	1979-04-25	73 BRIKLY	F	25125.00	315152	3	ACADEMIC	315152	1989-12-20	BIO INFORMATICS	19	SOUTH AFRICA	19	3.28	LONDON
+
+Method 2 :
+
+SELECT DISTINCT 
+e.ename, e.esrno, e.bdate, e.address, e.sex, e.salary, 
+d.dname, dl.dlocation FROM employee e 
+LEFT JOIN department d ON e.dno = d.dnumber 
+LEFT JOIN dept_locations dl ON e.dno = dl.dnumber WHERE e.ename = 'MEENAKSHI';
+
+Output :
+
+ename	esrno	bdate	address	sex	salary	dname	dlocation
+MEENAKSHI	334548	1979-04-25	73 BRIKLY	F	25125.00	ACADEMIC	LONDON
+
+Method  3 :
+
+SELECT e.ename, e.esrno, e.bdate, e.address, e.sex, e.salary, 
+d.dname, dl.dlocation, 
+p.pname, p.plocation, COUNT(w.pno) as 
+work_entries, ROUND(SUM(w.hours)::numeric, 2) as total_hours, 
+STRING_AGG(ROUND(w.hours::numeric, 2)::text, ' | ') as all_hours
+FROM employee e LEFT JOIN department d ON e.dno = d.dnumber 
+LEFT JOIN dept_locations dl ON e.dno = dl.dnumber 
+LEFT JOIN work_on w ON e.esrno = w.esrno 
+LEFT JOIN project p ON w.pno = p.pnumber 
+WHERE e.ename = 'MEENAKSHI' 
+GROUP BY e.ename, e.esrno, e.bdate, e.address, e.sex, e.salary, d.dname, dl.dlocation, p.pname, p.plocation;
+
+Output :
+
+ename	esrno	bdate	address	sex	salary	dname	dlocation	pname	plocation	work_entries	total_hours	all_hours
+MEENAKSHI	334548	1979-04-25	73 BRIKLY	F	25125.00	ACADEMIC	LONDON	BIO INFORMATICS	SOUTH AFRICA	3	8.32	2.50 | 2.54 | 3.28
