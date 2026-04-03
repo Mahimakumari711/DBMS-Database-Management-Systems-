@@ -1,0 +1,9 @@
+SELECT m.ename AS manager_name, SUM(w.hours) AS total_hours FROM employee m INNER JOIN employee e ON m.esrno = e.mgrsrno INNER JOIN work_on w ON e.esrno = w.esrno GROUP BY m.esrno, m.ename ORDER BY total_hours ;
+
+Output :
+
+manager_name	total_hours
+SATYA	1.25
+AJIT BEHERA	11.56
+UMASHANKAR	17.48
+AJIT NAYAK	20.63
