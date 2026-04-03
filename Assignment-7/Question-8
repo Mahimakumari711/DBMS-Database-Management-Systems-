@@ -1,0 +1,8 @@
+SELECT e.* FROM department d INNER JOIN project p ON d.dnumber = p.dnum INNER JOIN employee e ON e.dno = d.dnumber WHERE p.pname = 'LINUX';
+
+Output :
+
+ename	esrno	bdate	address	sex	salary	mgrsrno	dno
+UMASHANKAR	216852	1967-07-17	26 FINE OAK	M	32770.00	133100	2
+BHAGWAT	215152	1971-03-23	55 FLORIDA	M	32802.00	216852	2
+DEBASMITA	295485	1970-04-16	1 QUEENS LAND	F	20500.00	216852	2
