@@ -1,0 +1,10 @@
+SELECT e.ename, 
+ROUND(SUM(w.hours)::numeric, 2) AS total_hours, 
+COUNT(w.pno) AS work_entries, 
+STRING_AGG(ROUND(w.hours::numeric, 2)::text, ' + ') AS hours_detail 
+FROM employee e JOIN work_on w ON e.esrno = w.esrno WHERE e.address LIKE '%BOSTON%' GROUP BY e.ename ORDER BY total_hours DESC;
+
+Output :
+
+ename	total_hours	work_entries	hours_detail
+JASWASI	1.25	1	1.25
