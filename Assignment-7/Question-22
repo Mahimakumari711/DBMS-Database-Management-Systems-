@@ -1,0 +1,12 @@
+SELECT 
+    e.ename, e.esrno, e.bdate, e.address, e.s, e.salary, e.mgrsrno, e.dno,
+    d.dname, d.mgrsrno as dept_mgr, d.mgrstartd,
+    p.pname, p.pnumber, p.plocation,
+    w.pno, w.hours,
+    dl.dlocation
+FROM employee e
+LEFT JOIN department d ON e.dno = d.dnumber
+LEFT JOIN project p ON d.dnumber = p.dnum
+LEFT JOIN work_on w ON e.esrno = w.esrno  -- Fixed: work_on not works_on
+LEFT JOIN dept_locations dl ON d.dnumber = dl.dnumber
+WHERE e.ename = 'MEENAKSHI';
