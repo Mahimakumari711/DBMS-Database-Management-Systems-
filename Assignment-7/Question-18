@@ -1,0 +1,8 @@
+SELECT e.ename, e.esrno, p.pname, w.hours FROM employee e INNER JOIN work_on w ON e.esrno = w.esrno INNER JOIN project p ON w.pno = p.pnumber WHERE w.hours > 5 ORDER BY w.hours DESC;
+
+Output :
+
+ename	esrno	pname	hours
+DEBASMITA	295485	LINUX	7.20
+DEBASMITA	295485	LINUX	5.35
+SATYA	495823	NETWORKING	5.27
