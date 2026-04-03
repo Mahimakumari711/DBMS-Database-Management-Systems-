@@ -1,0 +1,7 @@
+SELECT e.ename, SUM(w.hours) AS total_hours FROM employee e INNER JOIN work_on w ON e.esrno = w.esrno WHERE e.sex = 'F' GROUP BY e.esrno, e.ename ORDER BY total_hours;
+
+Output :
+
+ename	total_hours
+MEENAKSHI	8.32
+DEBASMITA	13.91
