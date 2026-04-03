@@ -1,0 +1,17 @@
+SELECT 
+    d.dname AS department_name,
+    ROUND(SUM(w.hours)::numeric, 2) AS total_project_hours,
+    COUNT(DISTINCT w.esrno) AS employees,
+    COUNT(*) AS work_entries
+FROM department d
+JOIN project p ON d.dnumber = p.dnum
+JOIN work_on w ON p.pnumber = w.pno
+GROUP BY d.dname, d.dnumber
+ORDER BY total_project_hours DESC;
+
+Output :
+
+department_name	total_project_hours	employees	work_entries
+PROJECT	21.14	4	7
+RESEARCH	14.92	1	4
+ACADEMIC	14.86	3	6
