@@ -1,0 +1,7 @@
+
+SELECT e.ename FROM employee e INNER JOIN department d ON e.dno=d.dnumber INNER JOIN dept_locations dl ON dl.dnumber = d.dnumber WHERE dl.dlocation='INDIA';
+
+Output :
+
+ename
+AJIT NAYAK
