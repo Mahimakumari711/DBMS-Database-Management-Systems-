@@ -1,0 +1,15 @@
+Method 1:
+SELECT e.ename, e.esrno, e.dno FROM employee e INNER JOIN department d ON e.dno = d.dnumber WHERE d.dname != 'ACADEMIC';
+
+Method 2:
+SELECT e.ename, e.esrno, e.dno FROM employee e INNER JOIN department d ON e.dno = d.dnumber WHERE d.dname <> 'ACADEMIC';
+
+Output :
+
+ename	esrno	dno
+AJIT NAYAK	133100	1
+SATYA	495823	4
+UMASHANKAR	216852	2
+BHAGWAT	215152	2
+JASWASI	215485	4
+DEBASMITA	295485	2
