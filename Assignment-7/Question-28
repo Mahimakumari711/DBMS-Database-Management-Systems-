@@ -1,0 +1,10 @@
+SELECT 
+    e.*,w.esrno
+FROM employee e
+LEFT JOIN work_on w ON e.esrno = w.esrno
+WHERE e.ename = 'AJIT NAYAK';
+
+Output :
+
+ename	esrno	bdate	address	sex	salary	mgrsrno	dno	esrno
+AJIT NAYAK	133100	1955-04-25	73 BOSTON	M	35000.00	NULL	1	NULL
