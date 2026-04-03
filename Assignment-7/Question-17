@@ -1,0 +1,7 @@
+SELECT e.ename FROM employee e INNER JOIN department d ON e.dno = d.dnumber WHERE d.dname = 'RESEARCH';
+
+Output :
+
+ename
+SATYA
+JASWASI
