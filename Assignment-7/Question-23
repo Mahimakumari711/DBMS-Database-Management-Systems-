@@ -1,0 +1,8 @@
+SELECT DISTINCT e.ename FROM employee e JOIN work_on w ON e.esrno = w.esrno WHERE w.pno = 19;
+
+Output :
+
+ename
+AJIT BEHERA
+MEENAKSHI
+NIHAR NAYAK
