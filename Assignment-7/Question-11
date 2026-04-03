@@ -1,0 +1,9 @@
+SELECT w.hours FROM work_on w INNER JOIN project p ON w.pno= p.pnumber WHERE p.pname='NETWORKING';
+
+Output :
+
+hours
+5.27
+4.15
+2.36
+3.14
