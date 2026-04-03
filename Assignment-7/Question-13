@@ -1,0 +1,13 @@
+SELECT e.ename, p.pname, SUM(w.hours) AS total_hours FROM employee e INNER JOIN work_on w ON e.esrno = w.esrno INNER JOIN project p ON w.pno = p.pnumber GROUP BY e.esrno, e.ename, p.pname ORDER BY total_hours ;
+
+Output :
+
+ename	pname	total_hours
+JASWASI	LINUX	1.25
+UMASHANKAR	LINUX	2.41
+NIHAR NAYAK	BIO INFORMATICS	3.24
+AJIT BEHERA	BIO INFORMATICS	3.30
+BHAGWAT	LINUX	3.57
+MEENAKSHI	BIO INFORMATICS	8.32
+DEBASMITA	LINUX	13.91
+SATYA	NETWORKING	14.92
