@@ -1,0 +1,6 @@
+SELECT p.pname, SUM(w.hours) AS total_hours FROM project p INNER JOIN work_on w ON w.pno = p.pnumber WHERE p.pname = 'LINUX' GROUP BY p.pnumber, p.pname;
+
+Output :
+
+pname	total_hours
+LINUX	21.14
