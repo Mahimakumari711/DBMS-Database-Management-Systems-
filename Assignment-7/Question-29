@@ -1,11 +1,4 @@
-SELECT DISTINCT
-    e.*,d.*,p.*,w.*,dl.*
-FROM employee e
-LEFT JOIN department d ON e.dno = d.dnumber
-LEFT JOIN work_on w ON e.esrno = w.esrno
-LEFT JOIN project p ON w.pno = p.pnumber
-LEFT JOIN dept_locations dl ON e.dno = dl.dnumber
-ORDER BY e.ename;
+SELECT DISTINCT e.*,d.*,p.*,w.*,dl.* FROM employee e LEFT JOIN department d ON e.dno = d.dnumber LEFT JOIN work_on w ON e.esrno = w.esrno LEFT JOIN project p ON w.pno = p.pnumber LEFT JOIN dept_locations dl ON e.dno = dl.dnumber ORDER BY e.ename;
 
 Output :
 
