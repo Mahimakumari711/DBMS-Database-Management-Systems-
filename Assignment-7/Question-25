@@ -1,6 +1,4 @@
-SELECT p.pname AS project_name, p.plocation AS project_location, 
-w.esrno AS employee_serial_no, ROUND(SUM(w.hours)::numeric, 2) AS total_working_hours 
-FROM project p JOIN work_on w ON p.pnumber = w.pno GROUP BY p.pname, p.plocation, w.esrno ORDER BY p.pname, w.esrno;
+SELECT p.pname AS project_name, p.plocation AS project_location, w.esrno AS employee_serial_no, ROUND(SUM(w.hours)::numeric, 2) AS total_working_hours FROM project p JOIN work_on w ON p.pnumber = w.pno GROUP BY p.pname, p.plocation, w.esrno ORDER BY p.pname, w.esrno;
 
 Output :
 
