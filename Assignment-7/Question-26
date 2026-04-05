@@ -1,13 +1,4 @@
-SELECT 
-    p.pname AS project_name,
-    p.plocation AS project_location,
-    ROUND(SUM(w.hours)::numeric, 2) AS total_hours,
-    COUNT(DISTINCT w.esrno) AS employees_involved,
-    COUNT(*) AS total_work_entries
-FROM project p
-JOIN work_on w ON p.pnumber = w.pno
-GROUP BY p.pname, p.plocation, p.pnumber
-ORDER BY total_hours DESC;
+SELECT p.pname AS project_name, p.plocation AS project_location, ROUND(SUM(w.hours)::numeric, 2) AS total_hours, COUNT(DISTINCT w.esrno) AS employees_involved, COUNT(*) AS total_work_entries FROM project p JOIN work_on w ON p.pnumber = w.pno GROUP BY p.pname, p.plocation, p.pnumber ORDER BY total_hours DESC;
 
 Output :
 
