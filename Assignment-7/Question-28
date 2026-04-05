@@ -1,8 +1,4 @@
-SELECT 
-    e.*,w.esrno
-FROM employee e
-LEFT JOIN work_on w ON e.esrno = w.esrno
-WHERE e.ename = 'AJIT NAYAK';
+SELECT e.*,w.esrno FROM employee e LEFT JOIN work_on w ON e.esrno = w.esrno WHERE e.ename = 'AJIT NAYAK';
 
 Output :
 
