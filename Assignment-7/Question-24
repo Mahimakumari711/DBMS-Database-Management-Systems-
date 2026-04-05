@@ -1,7 +1,4 @@
-SELECT e.ename, COALESCE(ROUND(SUM(w.hours)::numeric, 2), 0) AS total_hours, 
-COALESCE(COUNT(w.pno), 0) AS work_entries, 
-COALESCE(STRING_AGG(ROUND(w.hours::numeric, 2)::text, ' + '), 'no entries') AS hours_detail 
-FROM employee e LEFT JOIN work_on w ON e.esrno = w.esrno WHERE e.address LIKE '%BOSTON%' GROUP BY e.ename ORDER BY total_hours DESC;
+SELECT e.ename, COALESCE(ROUND(SUM(w.hours)::numeric, 2), 0) AS total_hours, COALESCE(COUNT(w.pno), 0) AS work_entries, COALESCE(STRING_AGG(ROUND(w.hours::numeric, 2)::text, ' + '), 'no entries') AS hours_detail FROM employee e LEFT JOIN work_on w ON e.esrno = w.esrno WHERE e.address LIKE '%BOSTON%' GROUP BY e.ename ORDER BY total_hours DESC;
 
 Output :
 
