@@ -1,0 +1,1 @@
+CREATE VIEW V8 AS SELECT e.ename, e.esrno, e.bdate, dl.dno, dl.dlocation FROM employee e, dept_locations dl WHERE e.dno = d.dnumber ;
