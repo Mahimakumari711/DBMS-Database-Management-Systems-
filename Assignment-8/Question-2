@@ -1,0 +1,4 @@
+CREATE VIEW V2 AS SELECT ename, esrno, salary, mgrsrno, dno FROM employee ORDER BY ename;
+
+Output :
+Query executed OK, 0 rows affected.
