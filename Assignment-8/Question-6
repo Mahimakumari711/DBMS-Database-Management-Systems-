@@ -1,0 +1,12 @@
+CREATE VIEW V6 (DNUM,DLOC) AS SELECT dnumber, dlocation FROM dept_locations ;
+
+Output :
+Query executed OK, 0 rows affected.
+
+---------------------------------------------- Table : SELECT * FROM v6; --------------------------------------------------
+
+dnum	dloc
+2	SINGAPORE
+1	INDIA
+4	QUUENSLAND
+3	LONDON
