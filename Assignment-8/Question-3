@@ -1,0 +1,11 @@
+CREATE VIEW V3 AS SELECT ename AS Name, bdate AS DOB, esrno, salary, mgrsrno, dno FROM employee WHERE dno=1 OR dno=3;
+
+Output :
+Query executed OK, 0 rows affected.
+
+---------------------------------------------------- Method 2 --------------------------------------------------------------------------------------
+
+CREATE VIEW V3 (Name,DOB,esrno,salary,mgrsrno,dno) AS SELECT ename, bdate, esrno, salary, mgrsrno, dno FROM employee WHERE dno=1 OR dno=3;
+
+Output :
+Query executed OK, 0 rows affected.
