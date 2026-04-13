@@ -1,0 +1,12 @@
+CREATE VIEW V4 (eid,dno,sal,comm) AS SELECT esrno, dno, salary, salary*0.45 FROM employee WHERE dno=1 OR dno=3;
+
+Output :
+Query executed OK, 0 rows affected.
+
+------------------------------------- Table : SELECT * FROM v4 ; ---------------------------------------------------------------
+
+eid	dno	sal	comm
+133100	1	35000.00	15750.0000
+315152	3	32802.00	14760.9000
+334548	3	25125.00	11306.2500
+334524	3	29105.00	13097.2500
