@@ -1,0 +1,4 @@
+CREATE VIEW V1 AS SELECT ename, bdate, address, sex FROM employee;
+
+Output :
+Query executed OK, 0 rows affected.
