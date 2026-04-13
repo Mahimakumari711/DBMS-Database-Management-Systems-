@@ -1,0 +1,17 @@
+CREATE VIEW V5 (ENAME,YOB,GENDER,ADDR) AS SELECT ename, EXTRACT (YEAR FROM bdate ),  sex, address FROM employee;
+
+Output :
+Query executed OK, 0 rows affected.
+
+------------------------------------------- Table : SELECT * FROM v5; ---------------------------------------------------------
+
+ename	yob	gender	addr
+AJIT NAYAK	1955	M	73 BOSTON
+SATYA	1966	M	26 FINE OAK
+AJIT BEHERA	1971	M	10 KALINGA
+UMASHANKAR	1967	M	26 FINE OAK
+BHAGWAT	1971	M	55 FLORIDA
+MEENAKSHI	1979	F	73 BRIKLY
+JASWASI	1979	M	17 BOSTON
+NIHAR NAYAK	1966	M	73 DALLAS
+DEBASMITA	1970	F	1 QUEENS LAND
