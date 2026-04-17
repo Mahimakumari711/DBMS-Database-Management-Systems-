@@ -1,0 +1,18 @@
+CREATE VIEW v11 AS SELECT e.ename, e.esrno, e.salary AS esal, e.mgrsrno, m.ename AS mgrname, m.salary AS msal FROM Employee e LEFT JOIN Employee m ON e.mgrsrno = m.esrno;
+
+Output :
+
+Query executed OK, 0 rows affected.
+
+---------------------------------------------------------------------------------------------------- Table : SELECT * FROM v11 ; ---------------------------------------------------------------------
+
+ename	esrno	esal	mgrsrno	mgrname	msal
+AJIT NAYAK	133100	35000.00	NULL	NULL	NULL
+SATYA	495823	32770.00	133100	AJIT NAYAK	35000.00
+AJIT BEHERA	315152	32802.00	133100	AJIT NAYAK	35000.00
+UMASHANKAR	216852	32770.00	133100	AJIT NAYAK	35000.00
+BHAGWAT	215152	32802.00	216852	UMASHANKAR	32770.00
+MEENAKSHI	334548	25125.00	315152	AJIT BEHERA	32802.00
+JASWASI	215485	20500.00	495823	SATYA	32770.00
+NIHAR NAYAK	334524	29105.00	315152	AJIT BEHERA	32802.00
+DEBASMITA	295485	20500.00	216852	UMASHANKAR	32770.00
