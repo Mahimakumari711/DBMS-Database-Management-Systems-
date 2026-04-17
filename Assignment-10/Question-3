@@ -1,0 +1,20 @@
+CREATE UNIQUE INDEX idx_employee_mgrsrno ON employee (esrno);
+
+CREATE UNIQUE INDEX idx_employee_mgrsrno ON employee (mgrsrno);      <----- Have dublicate item ------->
+
+Output :
+
+Query executed OK, 0 rows affected.
+
+--------------------------------------------------- Table : SELECT * FROM employee ; --------------------------------------------------------------------
+
+ename	esrno	bdate	address	sex	salary	mgrsrno	dno
+AJIT NAYAK	133100	1955-04-25	73 BOSTON	M	35000.00	NULL	1
+SATYA	495823	1966-07-17	26 FINE OAK	M	32770.00	133100	4
+AJIT BEHERA	315152	1971-07-09	10 KALINGA	M	32802.00	133100	3
+UMASHANKAR	216852	1967-07-17	26 FINE OAK	M	32770.00	133100	2
+BHAGWAT	215152	1971-03-23	55 FLORIDA	M	32802.00	216852	2
+MEENAKSHI	334548	1979-04-25	73 BRIKLY	F	25125.00	315152	3
+JASWASI	215485	1979-08-12	17 BOSTON	M	20500.00	495823	4
+NIHAR NAYAK	334524	1966-12-17	73 DALLAS	M	29105.00	315152	3
+DEBASMITA	295485	1970-04-16	1 QUEENS LAND	F	20500.00	216852	2
