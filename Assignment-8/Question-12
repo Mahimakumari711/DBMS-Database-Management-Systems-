@@ -1,0 +1,23 @@
+INSERT INTO v6 (dnum, dloc) VALUES (5, 'MANCHESWAR');
+
+Output :
+
+Query executed OK, 1 row affected.
+
+----------------------------------------------------------- Table : SELECT * FROM v6 ; --------------------------------------------------------------------------
+
+dnum	dloc
+2	SINGAPORE
+1	INDIA
+4	QUUENSLAND
+3	LONDON
+5	MANCHESWAR
+
+---------------------------------------------------------- Original Table : SELECT * FROM dept_locations; -------------------------------------------------------
+
+dnumber	dlocation
+2	SINGAPORE
+1	INDIA
+4	QUUENSLAND
+3	LONDON
+5	MANCHESWAR
