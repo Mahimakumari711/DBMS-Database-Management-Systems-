@@ -1,0 +1,6 @@
+SELECT deptno FROM dept EXCEPT SELECT deptno FROM emp;
+
+Output :
+
+deptno
+40
