@@ -1,0 +1,17 @@
+CREATE VIEW v10 AS SELECT e.esrno, e.ename, e.dno, d.dname, dl.dlocation, p.pnumber, p.pname,p.plocation FROM employee e JOIN department d ON e.dno = d.dnumber JOIN dept_locations dl ON d.dnumber = dl.dnumber JOIN project p ON e.dno = p.dnum;
+
+Output :
+
+Query executed OK, 0 rows affected.
+
+--------------------------------------------------------- Table : SELECT * FROM v10 ; -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+esrno	ename	dno	dname	dlocation	pnumber	pname	plocation
+216852	UMASHANKAR	2	PROJECT	SINGAPORE	17	LINUX	INDIA
+215152	BHAGWAT	2	PROJECT	SINGAPORE	17	LINUX	INDIA
+295485	DEBASMITA	2	PROJECT	SINGAPORE	17	LINUX	INDIA
+495823	SATYA	4	RESEARCH	QUUENSLAND	11	NETWORKING	KOREA
+215485	JASWASI	4	RESEARCH	QUUENSLAND	11	NETWORKING	KOREA
+315152	AJIT BEHERA	3	ACADEMIC	LONDON	19	BIO INFORMATICS	SOUTH AFRICA
+334548	MEENAKSHI	3	ACADEMIC	LONDON	19	BIO INFORMATICS	SOUTH AFRICA
+334524	NIHAR NAYAK	3	ACADEMIC	LONDON	19	BIO INFORMATICS	SOUTH AFRICA
