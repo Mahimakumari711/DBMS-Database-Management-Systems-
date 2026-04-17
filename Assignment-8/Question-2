@@ -2,3 +2,16 @@ CREATE VIEW V2 AS SELECT ename, esrno, salary, mgrsrno, dno FROM employee ORDER 
 
 Output :
 Query executed OK, 0 rows affected.
+
+-------------------------------------------------- Table : SELECT * FROM v2 ; -----------------------------------------------------------
+
+ename	esrno	salary	mgrsrno	dno
+AJIT BEHERA	315152	32802.00	133100	3
+AJIT NAYAK	133100	35000.00	NULL	1
+BHAGWAT	215152	32802.00	216852	2
+DEBASMITA	295485	20500.00	216852	2
+JASWASI	215485	20500.00	495823	4
+MEENAKSHI	334548	25125.00	315152	3
+NIHAR NAYAK	334524	29105.00	315152	3
+SATYA	495823	32770.00	133100	4
+UMASHANKAR	216852	32770.00	133100	2
