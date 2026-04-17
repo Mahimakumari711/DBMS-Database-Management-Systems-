@@ -9,3 +9,11 @@ CREATE VIEW V3 (Name,DOB,esrno,salary,mgrsrno,dno) AS SELECT ename, bdate, esrno
 
 Output :
 Query executed OK, 0 rows affected.
+
+---------------------------------------------------- Table : SELECT * FROM v3 ; --------------------------------------------------------------------
+
+name	dob	esrno	salary	mgrsrno	dno
+AJIT NAYAK	1955-04-25	133100	35000.00	NULL	1
+AJIT BEHERA	1971-07-09	315152	32802.00	133100	3
+MEENAKSHI	1979-04-25	334548	25125.00	315152	3
+NIHAR NAYAK	1966-12-17	334524	29105.00	315152	3
