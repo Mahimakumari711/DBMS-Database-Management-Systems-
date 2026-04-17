@@ -1,0 +1,4 @@
+INSERT INTO v6 (dnum, dloc)
+VALUES (5, 'MANCHESWAR');
+
+SELECT * FROM v6 ;
