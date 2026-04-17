@@ -1,7 +1,18 @@
-CREATE VIEW V8 AS SELECT e.ename, e.esrno, e.bdate, dl.dno, dl.dlocation FROM employee e, dept_locations dl WHERE e.dno = d.dnumber ;
+CREATE VIEW V8 AS SELECT e.ename, e.esrno, e.bdate, dl.dnumber, dl.dlocation FROM employee e JOIN dept_locations dl ON e.dno = dl.dnumber; 
 
+Output :
 
-CREATE VIEW V8 AS SELECT e.ename, e.esrno, e.bdate, dl.dno, dl.dlocation FROM employee e JOIN dept_locations dl ON e.dno = dl.dno; 
+Query executed OK, 0 rows affected.
 
+-------------------------------------------------------------------- Table : SELECT * FROM v8 ; -----------------------------------------------------------------------
 
-SELECT * FROM v8 ;
+ename	esrno	bdate	dnumber	dlocation
+DEBASMITA	295485	1970-04-16	2	SINGAPORE
+BHAGWAT	215152	1971-03-23	2	SINGAPORE
+UMASHANKAR	216852	1967-07-17	2	SINGAPORE
+AJIT NAYAK	133100	1955-04-25	1	INDIA
+JASWASI	215485	1979-08-12	4	QUUENSLAND
+SATYA	495823	1966-07-17	4	QUUENSLAND
+NIHAR NAYAK	334524	1966-12-17	3	LONDON
+MEENAKSHI	334548	1979-04-25	3	LONDON
+AJIT BEHERA	315152	1971-07-09	3	LONDON
