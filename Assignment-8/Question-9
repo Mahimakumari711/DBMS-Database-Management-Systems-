@@ -1,0 +1,17 @@
+CREATE VIEW v9 AS SELECT esrno, SUM(hours) AS time FROM work_on GROUP BY esrno;
+
+Output :
+
+Query executed OK, 0 rows affected.
+
+--------------------------------------------------------- Table : SELECT * FROM v9 ; ---------------------------------------------------------------------------
+
+esrno	time
+215485	1.25
+315152	3.30
+334548	8.32
+334524	3.24
+495823	14.92
+295485	13.91
+215152	3.57
+216852	2.41
