@@ -2,6 +2,7 @@ CREATE INDEX idx_employee_esrno ON employee (esrno);
 
 Output :
 
+Query executed OK, 0 rows affected.
 
 ---------------------- Table : SELECT * FROM employee ; -------------------------------------------------
 
