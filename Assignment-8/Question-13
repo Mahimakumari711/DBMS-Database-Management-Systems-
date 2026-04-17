@@ -1,0 +1,23 @@
+UPDATE v6 SET dnum = 10 WHERE dnum = 5;
+
+Output :
+
+Query executed OK, 1 row affected.
+
+----------------------------------------------------------------------- Table : SELECT * FROM v6 ; ----------------------------------------------------------------------
+
+dnum	dloc
+2	SINGAPORE
+1	INDIA
+4	QUUENSLAND
+3	LONDON
+10	MANCHESWAR
+
+--------------------------------------------------------------------- Original Table : SELECT * FROM dept_locations; --------------------------------------------------------------
+
+dnumber	dlocation
+2	SINGAPORE
+1	INDIA
+4	QUUENSLAND
+3	LONDON
+10	MANCHESWAR
