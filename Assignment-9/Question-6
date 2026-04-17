@@ -1,0 +1,11 @@
+SELECT ename FROM emp WHERE deptno = 30 OR job = 'SALESMAN';
+
+Output :
+
+ename
+ALLEN
+WARD
+MARTIN
+BLAKE
+TURNER
+JAMES
