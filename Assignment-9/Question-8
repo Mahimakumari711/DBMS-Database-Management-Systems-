@@ -1,0 +1,10 @@
+SELECT ename FROM emp WHERE mgr IN ( SELECT empno FROM emp WHERE ename = 'JONES' OR ename = 'KING');
+
+Output :
+
+ename
+JONES
+BLAKE
+CLARK
+SCOTT
+FORD
