@@ -2,3 +2,16 @@ CREATE VIEW V1 AS SELECT ename, bdate, address, sex FROM employee;
 
 Output :
 Query executed OK, 0 rows affected.
+
+------------------------------------------------- Table : SELECT * FROM v1 ; -------------------------------------------------
+
+ename	bdate	address	sex
+AJIT NAYAK	1955-04-25	73 BOSTON	M
+SATYA	1966-07-17	26 FINE OAK	M
+AJIT BEHERA	1971-07-09	10 KALINGA	M
+UMASHANKAR	1967-07-17	26 FINE OAK	M
+BHAGWAT	1971-03-23	55 FLORIDA	M
+MEENAKSHI	1979-04-25	73 BRIKLY	F
+JASWASI	1979-08-12	17 BOSTON	M
+NIHAR NAYAK	1966-12-17	73 DALLAS	M
+DEBASMITA	1970-04-16	1 QUEENS LAND	F
