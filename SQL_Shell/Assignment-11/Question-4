@@ -1,0 +1,2 @@
+cse_db24=*> DELETE FROM movie WHERE Name IN ('3 Idiots','Titanic','Dangal','Pathaan','Ghajini');
+DELETE 5
