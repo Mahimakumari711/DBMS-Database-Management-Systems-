@@ -1,0 +1,8 @@
+cse_db24=> begin;
+BEGIN
+cse_db24=*> savepoint sp1;
+SAVEPOINT
+cse_db24=*> rollback to savepoint sp1;
+ROLLBACK
+cse_db24=*> commit;
+COMMIT
