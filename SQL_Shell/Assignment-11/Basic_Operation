@@ -1,0 +1,2 @@
+cse_db24=> create table movie ( Name VARCHAR(20), Director VARCHAR(20), Actor VARCHAR(10), Actress  VARCHAR(10), Budget NUMERIC(10,2), ReleaseYear NUMERIC(4), Rating NUMERIC(1));
+CREATE TABLE
