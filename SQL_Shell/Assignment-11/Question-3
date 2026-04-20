@@ -1,0 +1,4 @@
+cse_db24=> begin;
+BEGIN
+cse_db24=*> savepoint sp1;
+SAVEPOINT
