@@ -1,0 +1,2 @@
+cse_db24=> insert into movie VALUES ('Jurassic Park','Steven Spielberg','Sam Neill','Laura Dern',63.00,1993,8), ('Gravity','Alfonso Cuarón','George C','Sandra B',100.00,2013,7);
+INSERT 0 2
