@@ -1,0 +1,2 @@
+cse_db24=> UPDATE movie SET PRODUCER = CASE Name WHEN '3 Idiots' THEN 'Vidhu Vinod Chopra' WHEN 'Titanic' THEN 'James Cameron' WHEN 'Dangal' THEN 'Aamir Khan' WHEN 'Interstellar' THEN 'Christopher Nolan' WHEN 'Pathaan' THEN 'Aditya Chopra' WHEN 'Bahubali 2' THEN 'Shobu Yarlagadda' WHEN 'PK' THEN 'Aamir Khan' WHEN 'Ghajini' THEN 'Aamir Khan' WHEN 'Kung Fu Panda' THEN 'Benjamin Gluck' WHEN 'Inception' THEN 'Emma Thomas' WHEN 'Jurassic Park' THEN 'Kathleen Kennedy' WHEN 'Gravity' THEN 'Alfonso Cuarón' ELSE NULL END;
+UPDATE 12
