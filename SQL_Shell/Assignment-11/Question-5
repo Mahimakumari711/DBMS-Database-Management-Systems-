@@ -1,0 +1,9 @@
+cse_db24=*> select * from movie;
+     name      |     director      |  actor  |  actress  | budget | releaseyear | rating
+---------------+-------------------+---------+-----------+--------+-------------+--------
+ Interstellar  | Christopher Nolan | Matt M  | Anne H    | 450.00 |        2014 |      9
+ Bahubali 2    | S.S. Rajamouli    | Prabhas | Anushka S | 250.00 |        2017 |      8
+ PK            | Rajkumar Hirani   | Aamir K | Anushka S |  70.00 |        2014 |      8
+ Kung Fu Panda | Mark Osborne      | Jack B  |           |  35.00 |        2008 |      7
+ Inception     | Christopher Nolan | Leo D   | Marion C  | 200.00 |        2010 |      9
+(5 rows)
