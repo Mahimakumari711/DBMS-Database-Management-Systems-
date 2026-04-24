@@ -1,0 +1,24 @@
+do $$
+declare
+  a numeric := 10;  
+  b numeric := 5;
+begin
+  raise notice 'sum=%', a+b;
+  raise notice 'diff=%', a-b;
+  raise notice 'product=%', a*b;
+  if b != 0 then 
+    raise notice 'quotient=%', a/b;
+  else 
+    raise notice 'quotient=cannot divide by 0';
+  end if;
+end $$;
+
+
+Output :
+
+cse_db24=> \i q2.sql
+psql:q2.sql:14: NOTICE:  sum=15
+psql:q2.sql:14: NOTICE:  diff=5
+psql:q2.sql:14: NOTICE:  product=50
+psql:q2.sql:14: NOTICE:  quotient=2.0000000000000000
+DO
