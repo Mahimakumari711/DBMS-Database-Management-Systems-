@@ -1,0 +1,21 @@
+do $$
+declare
+  a numeric := 10;  
+  b numeric := 20;
+  c numeric := 15;
+begin
+  if a > b and a > c then 
+    raise notice 'a = % is greatest', a;
+  elsif b > a and b > c then 
+    raise notice 'b = % is greatest', b;
+  else 
+    raise notice 'c = % is greatest', c;
+  end if;
+end $$;
+
+
+Output :
+
+cse_db24=> \i q3.sql
+psql:q3.sql:14: NOTICE:  b = 20 is greatest
+DO
