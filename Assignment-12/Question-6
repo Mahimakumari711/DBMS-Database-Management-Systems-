@@ -1,0 +1,22 @@
+do $$
+declare
+  i numeric := 1;
+begin
+  while i <= 10 loop
+    if i % 2 = 0 then 
+      raise notice '%', i;
+    end if;
+    i := i + 1;
+  end loop;
+end $$;
+
+
+Output :
+
+cse_db24=> \i q6.sql
+psql:q6.sql:11: NOTICE:  2
+psql:q6.sql:11: NOTICE:  4
+psql:q6.sql:11: NOTICE:  6
+psql:q6.sql:11: NOTICE:  8
+psql:q6.sql:11: NOTICE:  10
+DO
