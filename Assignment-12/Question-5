@@ -1,0 +1,19 @@
+do $$
+declare
+  ch text := 'A';  
+begin
+  if (ch >= 'a' and ch <= 'z') or (ch >= 'A' and ch <= 'Z') then 
+    raise notice 'character % is letter', ch;
+  elsif (ch >= '0' and ch <= '9') then 
+    raise notice 'character % is digit', ch;
+  else 
+    raise notice 'character % is neither letter nor digit', ch;
+  end if;
+end $$;
+
+
+Output :
+
+cse_db24=> \i q5.sql
+psql:q5.sql:12: NOTICE:  character A is letter
+DO
