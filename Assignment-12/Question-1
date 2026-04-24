@@ -1,0 +1,10 @@
+do $$
+begin
+raise notice 'Hello Worid';
+end $$;
+
+
+Output :
+cse_db24=> \i hello.sql
+psql:hello.sql:4: NOTICE:  Hello Worid
+DO
