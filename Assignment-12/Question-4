@@ -1,0 +1,19 @@
+do $$
+declare
+  num numeric := 10;  
+begin
+  if num > 0 then 
+    raise notice 'number % is positive', num;
+  elsif num < 0 then 
+    raise notice 'number % is negative', num;
+  else 
+    raise notice 'number % is zero', num;
+  end if;
+end $$;
+
+
+Output :
+
+cse_db24=> \i q4.sql
+psql:q4.sql:12: NOTICE:  number 10 is positive
+DO
